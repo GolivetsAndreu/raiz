@@ -1,0 +1,2 @@
+class TeemUser < ApplicationRecord
+end
