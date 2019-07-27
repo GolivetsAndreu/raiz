@@ -1,6 +1,6 @@
 <div>
   <p><%= @transaction_result %></p>
-  <%= form_tag('payment/transaction') do %>
+  <%= form_tag('/') do %>
     <p>Select user or teem for credit transaction</p>
   	<%= label_tag(:user_from, 'User from') %>
   	<%= select_tag :user_from, options_from_collection_for_select(@users, "id", "name"), include_blank: true %>

@@ -8,4 +8,8 @@ class Score < ApplicationRecord
 		self.balans = self.balans - price
 		return true if self.save
 	end
+
+	def enough_money?(price)
+		self.balans > price
+	end
 end
