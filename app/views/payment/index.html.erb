@@ -1,0 +1,19 @@
+<div>
+  <%= form_with(url: 'payment') do %>
+    <br>
+  	<%= label_tag(:user_from, 'User from') %>
+  	<%= select_tag :user_from, options_from_collection_for_select(@users, "id", "name"), include_blank: true %>
+  	<%= label_tag(:teem_from, 'Or teem from') %>
+  	<%= select_tag :teem_from, options_from_collection_for_select(@teems, "id", "name"), include_blank: true %>
+  	<br><br>
+		<%= label_tag(:type_transaction, 'Type transaction') %>
+		<%= select(:type_transaction, '', Transaction::TYPES_TRANSACTION, include_blank: true) %>
+  	<br><br>
+  	<%= label_tag(:user_to, 'User to') %>
+  	<%= select_tag :user_to, options_from_collection_for_select(@users, "id", "name"), include_blank: true %>
+  	<%= label_tag(:teem_to, 'Or teem to') %>
+  	<%= select_tag :teem_to, options_from_collection_for_select(@teems, "id", "name"), include_blank: true %>
+  	<br><br>
+  	<%= submit_tag('Confirm') %>
+	<% end %>
+</div>
