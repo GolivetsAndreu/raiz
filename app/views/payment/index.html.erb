@@ -1,13 +1,11 @@
 <div>
+  <p><%= @transaction_result %></p>
   <%= form_tag('payment/transaction') do %>
-    <br>
+    <p>Select user or teem for credit transaction</p>
   	<%= label_tag(:user_from, 'User from') %>
   	<%= select_tag :user_from, options_from_collection_for_select(@users, "id", "name"), include_blank: true %>
   	<%= label_tag(:teem_from, 'Or teem from') %>
   	<%= select_tag :teem_from, options_from_collection_for_select(@teems, "id", "name"), include_blank: true %>
-  	<br><br>
-		<%= label_tag(:type_transaction, 'Type transaction') %>
-		<%= select("type_transaction", "type", Transaction::TYPES_TRANSACTION, { include_blank: true }) %>
   	<br><br>
   	<%= label_tag(:user_to, 'User to') %>
   	<%= select_tag :user_to, options_from_collection_for_select(@users, "id", "name"), include_blank: true %>
