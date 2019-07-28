@@ -30,3 +30,11 @@ teems_list.each do |teem|
 	teem = Teem.create(teem)
 	Score.create({object_id: teem.id, balans: 1000, type_object: 'teem'})
 end
+
+%w[1 2 3 4 5].each do |id|
+	TeemUser.create({ user_id: id, teem_id: 1})
+end
+
+%w[6 7 8 9 10].each do |id|
+	TeemUser.create({ user_id: id, teem_id: 1})
+end

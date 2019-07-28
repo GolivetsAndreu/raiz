@@ -1,14 +1,10 @@
 class PaymentController < ApplicationController
+	before_action :load_data
+
   def index
-  	@users = User.all
-  	@teems = Teem.all
-  	@transactions = Transaction.all
   end
 
   def transaction
-  	@users = User.all
-		@teems = Teem.all
-		@transactions = Transaction.all
   	@errors = validate_params_for_transaction(t_params)
 		if @errors.any?
 			render 'payment/errors', errors: @errors
@@ -104,6 +100,11 @@ class PaymentController < ApplicationController
 		errors
 	end
 
+	def load_data
+		@users = User.all
+		@teems = Teem.all
+		@transactions = Transaction.order(id: :desc)
+	end
 	private
 
 	def t_params
