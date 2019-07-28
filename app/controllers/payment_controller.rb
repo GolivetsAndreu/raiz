@@ -2,11 +2,13 @@ class PaymentController < ApplicationController
   def index
   	@users = User.all
   	@teems = Teem.all
+  	@transactions = Transaction.all
   end
 
   def transaction
   	@users = User.all
 		@teems = Teem.all
+		@transactions = Transaction.all
   	@errors = validate_params_for_transaction(t_params)
 		if @errors.any?
 			render 'payment/errors', errors: @errors
@@ -71,9 +73,10 @@ class PaymentController < ApplicationController
 	end
 
 	def create_transaction_history(obj_from, obj_to, price)
-		debit_transaction = DebitTransaction.new({ score_id: obj_from.score.id, price: price })
-		credit_transaction = CreditTransaction.new({ score_id: obj_to.score.id, price: price })
-		debit_transaction.save && credit_transaction.save
+		debit_transaction = DebitTransaction.new({ score_id: obj_from.score.id, price: price, name: obj_from.name })
+		credit_transaction = CreditTransaction.new({ score_id: obj_to.score.id, price: price, name: obj_to.name })
+		debit_transaction.save
+		credit_transaction.save
 	end
 
 	def validate_params_for_transaction(t_params)

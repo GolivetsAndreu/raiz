@@ -1,4 +1,6 @@
 class Teem < ApplicationRecord
+	validates_presence_of :name
+
 	has_many :teem_user
 
 	def score
@@ -7,5 +9,9 @@ class Teem < ApplicationRecord
 
 	def is_teems_user?(user_id)
 		teem_user.pluck(:id).include?(user_id)
+	end
+
+	def name_with_score_balans
+		"#{name} #{score.balans} y.e."
 	end
 end
