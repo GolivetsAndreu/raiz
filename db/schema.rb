@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20190726160714) do
 
   create_table "transactions", force: :cascade do |t|
     t.integer "score_id", null: false
+    t.string "name", default: "", null: false
     t.string "type", default: "", null: false
     t.integer "price", null: false
     t.datetime "created_at", null: false
