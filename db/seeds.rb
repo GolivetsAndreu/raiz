@@ -23,12 +23,12 @@ teems_list = [
 
 users_list.each do |user|
 	user = User.create(user)
-	Score.create({object_id: user.id, balans: 1000, type_object: 'user'})
+	user.build_score({balans: 1000}).save
 end
 
 teems_list.each do |teem|
 	teem = Teem.create(teem)
-	Score.create({object_id: teem.id, balans: 1000, type_object: 'teem'})
+	teem.build_score({balans: 1000}).save
 end
 
 %w[1 2 3 4 5].each do |id|

@@ -1,13 +1,10 @@
 class User < ApplicationRecord
-	validates_presence_of :name
+  has_one :score, as: :objectable
+  has_many :teem_user
 
-	has_many :teem_user
+  validates_presence_of :name
 
-	def score
-		Score.find_by(object_id: id, type_object: 'user')
-	end
-
-	def name_with_score_balans
-		"#{name} #{score.balans} y.e."
-	end
+  def name_with_score_balans
+    "#{name} #{score.balans} y.e."
+  end
 end

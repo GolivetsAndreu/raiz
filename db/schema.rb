@@ -13,11 +13,12 @@
 ActiveRecord::Schema.define(version: 20190726160714) do
 
   create_table "scores", force: :cascade do |t|
-    t.integer "object_id", null: false
     t.integer "balans", null: false
-    t.string "type_object", default: "", null: false
+    t.string "objectable_type"
+    t.integer "objectable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["objectable_type", "objectable_id"], name: "index_scores_on_objectable_type_and_objectable_id"
   end
 
   create_table "teem_users", force: :cascade do |t|
