@@ -1,7 +1,7 @@
-<% if @errors %>
+<% if @transaction&.errors %>
   <div class='d-flex justify-content-center flex-column w-50 mx-auto'>
-    <% if @errors.any? %>
-      <% @errors.full_messages.each do |error| %>
+    <% if @transaction.errors.any? %>
+      <% @transaction.errors.full_messages.each do |error| %>
         <div class='alert-danger'><%= error %></div>
       <% end %>
     <% else %>
@@ -10,7 +10,7 @@
   </div>
 <% end %>
 <div class='container'>
-  <%= form_tag('/') do %>
+  <%= form_tag(root_path) do %>
     <div class="form-group">
       <%= @transaction_result %>
     </div>

@@ -19,7 +19,7 @@ class Transaction < ApplicationRecord
 
   def teem_can_do_teem_user
     if from_score.objectable_type == 'Teem'
-      errors.add(:to_score_id, "can't be get money from this score") unless to_score.objectable.is_teems_user?(score_to.id)
+      errors.add(:to_score_id, "can't be get money from this score") unless from_score.objectable.is_teems_user?(to_score.id)
     end
   end
 

@@ -4,15 +4,13 @@ class PaymentController < ApplicationController
   def index; end
 
   def transaction
-    transaction = Transaction.new(t_params)
-    transaction.transfer
-    render 'payment/index', errors: @errors = transaction.errors
+    @transaction = Transaction.new(t_params)
+    @transaction.transfer
+    render 'payment/index'
   end
 
   def load_data
-    users = User.all
-    teems = Teem.all
-    @collection = users + teems
+    @collection = User.all + Teem.all
     @transactions = Transaction.order(id: :desc)
   end
 

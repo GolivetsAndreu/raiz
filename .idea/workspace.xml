@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="2e2c9b3e-5d59-4983-90e6-822d5e6f1f8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/payment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/payment_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/score.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/score.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/transaction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/payment/errors.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/payment/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/payment_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/payment_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/scores.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/scores.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/teem_users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/teem_users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/teems.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/teems.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/transactions.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/transactions.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/models/transaction_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/transaction_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +228,7 @@
       <workItem from="1564385375156" duration="324000" />
       <workItem from="1564584560473" duration="69000" />
       <workItem from="1564584629749" duration="6462000" />
-      <workItem from="1564635055234" duration="13119000" />
+      <workItem from="1564635055234" duration="22313000" />
     </task>
     <servers />
   </component>

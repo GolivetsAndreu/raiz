@@ -1,11 +1,23 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+alex_score:
+  id: 1
+  balans: 1000
+  objectable_id: 1
+  objectable_type: 'User'
 
-# This model initially had no columns defined. If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-# column: value
+andreu_score:
+  id: 2
+  balans: 1000
+  objectable_id: 2
+  objectable_type: 'User'
+
+misterbandb_score:
+  id: 4
+  balans: 1000
+  objectable_id: 1
+  objectable_type: 'Teem'
+
+raiz_score:
+  id: 5
+  balans: 1000
+  objectable_id: 2
+  objectable_type: 'Teem'

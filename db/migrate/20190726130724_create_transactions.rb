@@ -4,8 +4,7 @@ class CreateTransactions < ActiveRecord::Migration[5.1]
       t.integer 'from_score_id', null: false
       t.integer 'to_score_id', null: false
       t.integer 'amount', null: false
-      t.datetime 'created_at', null: false
-      t.datetime 'updated_at', null: false
+      t.timestamps
     end
   end
 end
