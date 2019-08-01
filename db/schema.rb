@@ -12,13 +12,13 @@
 
 ActiveRecord::Schema.define(version: 20190726160714) do
 
-  create_table "scores", force: :cascade do |t|
+  create_table "accounts", force: :cascade do |t|
     t.integer "balans", null: false
     t.string "objectable_type"
     t.integer "objectable_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["objectable_type", "objectable_id"], name: "index_scores_on_objectable_type_and_objectable_id"
+    t.index ["objectable_type", "objectable_id"], name: "index_accounts_on_objectable_type_and_objectable_id"
   end
 
   create_table "teem_users", force: :cascade do |t|
@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 20190726160714) do
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.integer "from_score_id", null: false
-    t.integer "to_score_id", null: false
+    t.integer "from_account_id", null: false
+    t.integer "to_account_id", null: false
     t.integer "amount", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

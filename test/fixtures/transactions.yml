@@ -1,4 +1,4 @@
 one:
-  from_score_id: 1
-  to_score_id: 2
+  from_account_id: 1
+  to_account_id: 2
   amount: 100

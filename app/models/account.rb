@@ -1,4 +1,4 @@
-class Score < ApplicationRecord
+class Account < ApplicationRecord
   belongs_to :objectable, polymorphic: true
   has_many :transactions
 

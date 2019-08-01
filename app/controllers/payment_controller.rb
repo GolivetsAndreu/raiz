@@ -17,6 +17,6 @@ class PaymentController < ApplicationController
   private
 
   def t_params
-    params.permit(:from_score_id, :to_score_id, :amount)
+    params.permit(:from_account_id, :to_account_id, :amount)
   end
 end

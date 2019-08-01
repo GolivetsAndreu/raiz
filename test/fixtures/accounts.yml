@@ -1,22 +1,22 @@
-alex_score:
+alex_account:
   id: 1
   balans: 1000
   objectable_id: 1
   objectable_type: 'User'
 
-andreu_score:
+andreu_account:
   id: 2
   balans: 1000
   objectable_id: 2
   objectable_type: 'User'
 
-misterbandb_score:
+misterbandb_account:
   id: 4
   balans: 1000
   objectable_id: 1
   objectable_type: 'Teem'
 
-raiz_score:
+raiz_account:
   id: 5
   balans: 1000
   objectable_id: 2
