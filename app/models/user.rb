@@ -7,4 +7,8 @@ class User < ApplicationRecord
   def name_with_score_balans
     "#{name} #{score.balans} y.e."
   end
+
+  def score_id
+    score.id
+  end
 end

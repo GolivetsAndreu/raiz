@@ -36,5 +36,5 @@ end
 end
 
 %w[6 7 8 9 10].each do |id|
-	TeemUser.create({ user_id: id, teem_id: 1})
+	TeemUser.create({ user_id: id, teem_id: 2})
 end

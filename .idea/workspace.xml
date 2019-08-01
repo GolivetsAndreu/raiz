@@ -4,9 +4,17 @@
     <list default="true" id="2e2c9b3e-5d59-4983-90e6-822d5e6f1f8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/payment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/payment_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/credit_transaction.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/debit_transaction.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/score.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/score.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/teem.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/teem.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/transaction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130634_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130634_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130644_create_teems.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130644_create_teems.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130705_create_teem_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130705_create_teem_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20190726160714_create_scores.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726160714_create_scores.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
@@ -219,7 +227,8 @@
       <workItem from="1564384951348" duration="178000" />
       <workItem from="1564385375156" duration="324000" />
       <workItem from="1564584560473" duration="69000" />
-      <workItem from="1564584629749" duration="6100000" />
+      <workItem from="1564584629749" duration="6462000" />
+      <workItem from="1564635055234" duration="10130000" />
     </task>
     <servers />
   </component>
