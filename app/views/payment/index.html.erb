@@ -1,3 +1,14 @@
+<% if @errors %>
+  <div class='d-flex justify-content-center flex-column w-50 mx-auto'>
+    <% if @errors.any? %>
+      <% @errors.full_messages.each do |error| %>
+        <div class='alert-danger'><%= error %></div>
+      <% end %>
+    <% else %>
+      <div>Transaction have done success</div>
+    <% end %>
+  </div>
+<% end %>
 <div class='container'>
   <%= form_tag('/') do %>
     <div class="form-group">
@@ -7,13 +18,13 @@
     <div class="form-group row">
       <%= label_tag(:score_from, 'Score from', class: 'col-sm-2 col-form-label') %>
       <div class='col-sm-10'>
-    	  <%= select_tag :score_from, options_from_collection_for_select(@collection, "score_id", "name_with_score_balans"), include_blank: true, class: 'form-control' %>
+    	  <%= select_tag :from_score_id, options_from_collection_for_select(@collection, "score_id", "name_with_score_balans"), include_blank: true, class: 'form-control' %>
   	  </div>
     </div>
     <div class="form-group row">
     	<%= label_tag(:score_to, 'Score to', class: 'col-sm-2 col-form-label') %>
       <div class='col-sm-10'>
-    	 <%= select_tag :score_to, options_from_collection_for_select(@collection, "score_id", "name_with_score_balans"), include_blank: true, class: 'form-control' %>
+    	 <%= select_tag :to_score_id, options_from_collection_for_select(@collection, "score_id", "name_with_score_balans"), include_blank: true, class: 'form-control' %>
   	  </div>
     </div>
     <div class="form-group row">

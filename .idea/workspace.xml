@@ -4,20 +4,10 @@
     <list default="true" id="2e2c9b3e-5d59-4983-90e6-822d5e6f1f8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/payment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/payment_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/credit_transaction.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/debit_transaction.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/score.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/score.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/teem.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/teem.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/transaction.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/transaction.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/payment/errors.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/payment/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/payment/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130634_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130634_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130644_create_teems.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130644_create_teems.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130705_create_teem_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130705_create_teem_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726130724_create_transactions.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190726160714_create_scores.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190726160714_create_scores.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +47,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -228,7 +219,7 @@
       <workItem from="1564385375156" duration="324000" />
       <workItem from="1564584560473" duration="69000" />
       <workItem from="1564584629749" duration="6462000" />
-      <workItem from="1564635055234" duration="10130000" />
+      <workItem from="1564635055234" duration="13119000" />
     </task>
     <servers />
   </component>

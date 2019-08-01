@@ -4,18 +4,9 @@ class PaymentController < ApplicationController
   def index; end
 
   def transaction
-    score_from = t_params[:score_from].presence
-    score_to = t_params[:score_to].presence
-    amount = t_params[:amount].present? ? t_params[:amount].to_i : nil
-
-    transaction = Score.create_transaction(score_from, score_to, amount)
-    if transaction.errors.any?
-      @errors = transaction.errors.full_messages
-      render 'payment/errors', errors: @errors
-    else
-      @transaction_result = 'Transaction have done success'
-      render 'payment/index', transaction_status: @transaction_result
-    end
+    transaction = Transaction.new(t_params)
+    transaction.transfer
+    render 'payment/index', errors: @errors = transaction.errors
   end
 
   def load_data
@@ -28,6 +19,6 @@ class PaymentController < ApplicationController
   private
 
   def t_params
-    params.permit(:score_from, :score_to, :amount)
+    params.permit(:from_score_id, :to_score_id, :amount)
   end
 end
