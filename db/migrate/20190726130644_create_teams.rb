@@ -1,6 +1,6 @@
-class CreateTeems < ActiveRecord::Migration[5.1]
+class CreateTeams < ActiveRecord::Migration[5.1]
   def change
-    create_table :teems do |t|
+    create_table :teams do |t|
       t.string :name, null: false
       t.timestamps
     end

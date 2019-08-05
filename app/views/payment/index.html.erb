@@ -14,17 +14,17 @@
     <div class="form-group">
       <%= @transaction_result %>
     </div>
-    <p>Select user or teem for credit transaction</p>
+    <p>Select user or team for credit transaction</p>
     <div class="form-group row">
       <%= label_tag(:score_from, 'Account from', class: 'col-sm-2 col-form-label') %>
       <div class='col-sm-10'>
-    	  <%= select_tag :from_account_id, options_from_collection_for_select(@collection, "account_id", "name_with_account_balans"), include_blank: true, class: 'form-control' %>
+    	  <%= select_tag :from_account_id, options_from_collection_for_select(@collection, "account_id", "name_with_account_balance"), include_blank: true, class: 'form-control' %>
   	  </div>
     </div>
     <div class="form-group row">
     	<%= label_tag(:score_to, 'Account to', class: 'col-sm-2 col-form-label') %>
       <div class='col-sm-10'>
-    	 <%= select_tag :to_account_id, options_from_collection_for_select(@collection, "account_id", "name_with_account_balans"), include_blank: true, class: 'form-control' %>
+    	 <%= select_tag :to_account_id, options_from_collection_for_select(@collection, "account_id", "name_with_account_balance"), include_blank: true, class: 'form-control' %>
   	  </div>
     </div>
     <div class="form-group row">

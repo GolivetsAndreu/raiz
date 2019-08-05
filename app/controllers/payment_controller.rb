@@ -10,7 +10,7 @@ class PaymentController < ApplicationController
   end
 
   def load_data
-    @collection = User.all + Teem.all
+    @collection = User.all + Team.all
     @transactions = Transaction.order(id: :desc)
   end
 

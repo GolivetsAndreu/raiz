@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20190726160714) do
 
   create_table "accounts", force: :cascade do |t|
-    t.integer "balans", null: false
+    t.integer "balance", null: false
     t.string "objectable_type"
     t.integer "objectable_id"
     t.datetime "created_at", null: false
@@ -21,14 +21,14 @@ ActiveRecord::Schema.define(version: 20190726160714) do
     t.index ["objectable_type", "objectable_id"], name: "index_accounts_on_objectable_type_and_objectable_id"
   end
 
-  create_table "teem_users", force: :cascade do |t|
+  create_table "team_users", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.integer "teem_id", null: false
+    t.integer "team_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "teems", force: :cascade do |t|
+  create_table "teams", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

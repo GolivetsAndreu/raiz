@@ -17,24 +17,24 @@ users_list = [
 	{ name: 'Dima' },
 	{ name: 'Vasia' }]
 
-teems_list = [
+teams_list = [
 	{ name: 'Msterbandb' },
 	{ name: 'Raiz' }]
 
 users_list.each do |user|
 	user = User.create(user)
-	user.build_account({balans: 1000}).save
+	user.build_account({balance: 1000}).save
 end
 
-teems_list.each do |teem|
-	teem = Teem.create(teem)
-	teem.build_account({balans: 1000}).save
+teams_list.each do |team|
+	team = Team.create(team)
+	team.build_account({balance: 1000}).save
 end
 
 %w[1 2 3 4 5].each do |id|
-	TeemUser.create({ user_id: id, teem_id: 1})
+	TeamUser.create({user_id: id, team_id: 1})
 end
 
 %w[6 7 8 9 10].each do |id|
-	TeemUser.create({ user_id: id, teem_id: 2})
+	TeamUser.create({user_id: id, team_id: 2})
 end

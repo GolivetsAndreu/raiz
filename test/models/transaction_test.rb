@@ -17,7 +17,7 @@ class TransactionTest < ActiveSupport::TestCase
     assert transaction.errors.full_messages[0] == "From account cannot be equal to the incoming account"
   end
 
-  test "doesn't do transaction if user not a teem's member" do
+  test "doesn't do transaction if user not a team's member" do
     transaction = Transaction.new(from_account_id: accounts(:misterbandb_account).id, to_account_id: accounts(:andreu_account).id, amount: 100)
     transaction.transfer
 
@@ -33,7 +33,7 @@ class TransactionTest < ActiveSupport::TestCase
     transaction.transfer
 
     assert !transaction.errors.any?
-    assert account_from.balans + 100, account_from.reload.balans
-    assert account_to.balans - 100, account_from.reload.balans
+    assert account_from.balance + 100, account_from.reload.balance
+    assert account_to.balance - 100, account_from.reload.balance
   end
 end
